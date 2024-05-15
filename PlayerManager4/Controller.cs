@@ -6,7 +6,7 @@ namespace PlayerManager4
     /// <summary>
     /// The player listing program.
     /// </summary>
-    public class Program
+    public class Controller
     {
         /// The list of all players
         private readonly List<Player> playerList;
@@ -24,7 +24,7 @@ namespace PlayerManager4
         private static void Main(string[] args)
         {
             // Create a new instance of the player listing program
-            Program prog = new Program();
+            Controller prog = new Controller();
             // Start the program instance
             prog.Start();
         }
@@ -32,18 +32,13 @@ namespace PlayerManager4
         /// <summary>
         /// Creates a new instance of the player listing program.
         /// </summary>
-        private Program()
+        private Controller()
         {
             // Initialize player comparers
             compareByName = new CompareByName(true);
             compareByNameReverse = new CompareByName(false);
 
-            // Initialize the player list with two players using collection
-            // initialization syntax
-            playerList = new List<Player>() {
-                new Player("Best player ever", 100),
-                new Player("An even better player", 500)
-            };
+
         }
 
         /// <summary>

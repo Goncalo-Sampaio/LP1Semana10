@@ -1,0 +1,19 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace 
+{
+    public class Program
+    {
+        private static void Main Main() {
+            // Initialize the player list with two players using collection
+            // initialization syntax
+            List<Player> playerList = new List<Player>() {
+                new Player("Best player ever", 100),
+                new Player("An even better player", 500)
+            };
+        }
+    }
+}
