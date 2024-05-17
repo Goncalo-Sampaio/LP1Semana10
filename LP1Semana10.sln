@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerManager4", "PlayerMan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerManagerMVC", "PlayerManagerMVC\PlayerManagerMVC.csproj", "{AD7B1D4D-0879-44D6-8DEC-2C9C7DA03C59}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuessTheNumber", "GuessTheNumber\GuessTheNumber.csproj", "{2A7C2B4E-74ED-44C0-A1E9-5DA8DA617E28}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{AD7B1D4D-0879-44D6-8DEC-2C9C7DA03C59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD7B1D4D-0879-44D6-8DEC-2C9C7DA03C59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD7B1D4D-0879-44D6-8DEC-2C9C7DA03C59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A7C2B4E-74ED-44C0-A1E9-5DA8DA617E28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A7C2B4E-74ED-44C0-A1E9-5DA8DA617E28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A7C2B4E-74ED-44C0-A1E9-5DA8DA617E28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A7C2B4E-74ED-44C0-A1E9-5DA8DA617E28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
