@@ -17,7 +17,7 @@ namespace PlayerManagerMVC
 
             Controller controller = new Controller(playerList);
 
-            IView view = new UglyView(controller, playerList);
+            IView view = new View(controller, playerList);
 
             controller.Start(view);
         }

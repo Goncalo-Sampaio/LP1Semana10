@@ -5,13 +5,13 @@ using System.Threading.Tasks;
 
 namespace PlayerManagerMVC
 {
-    public class UglyView : IView
+    public class View : IView
     {
         private readonly Controller controller;
 
         private readonly List<Player> players;
 
-        public UglyView(Controller controller, List<Player> players)
+        public View(Controller controller, List<Player> players)
         {
             this.controller = controller;
             this.players = players;
