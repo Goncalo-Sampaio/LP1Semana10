@@ -20,7 +20,7 @@ namespace PlayerManager4
         /// <summary>
         /// Shows the main menu.
         /// </summary>
-        private void ShowMenu()
+        public int ShowMenu()
         {
             Console.WriteLine("Menu");
             Console.WriteLine("----\n");
@@ -57,7 +57,6 @@ namespace PlayerManager4
             // Variables
             string name;
             int score;
-            Player newPlayer;
 
             // Ask for player info
             Console.WriteLine("\nInsert player");
@@ -68,7 +67,7 @@ namespace PlayerManager4
             score = int.Parse(Console.ReadLine());
 
             // Create new player and add it to list
-            newPlayer = new Player(name, score);
+            return new Player(name, score);
         }
 
         /// <summary>

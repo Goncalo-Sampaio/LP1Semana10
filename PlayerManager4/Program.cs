@@ -17,7 +17,7 @@ namespace PlayerManager4
 
             Controller controller = new Controller(playerList);
 
-            IVew view = new UglyView(controller, playerList);
+            IView view = new UglyView(controller, playerList);
 
             controller.Start(view);
         }

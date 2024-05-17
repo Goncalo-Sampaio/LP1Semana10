@@ -7,7 +7,7 @@ namespace PlayerManager4
 {
     public interface IView
     {
-        int MainMenu();
+        int ShowMenu();
 
         void EndMessage();
 
@@ -17,7 +17,7 @@ namespace PlayerManager4
 
         Player InsertPlayer();
 
-        void ListPlayers(IEnumerable<Player> playersToList)();
+        void ListPlayers(IEnumerable<Player> playersToList);
 
         int AskForMinimumScore();
 

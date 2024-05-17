@@ -9,7 +9,7 @@ namespace PlayerManager4
     public class Controller
     {
         /// The list of all players
-        private readonly List<Player> playerList;
+        private List<Player> playerList;
 
         // Comparer for comparing player by name (alphabetical order)
         private readonly IComparer<Player> compareByName;
@@ -20,22 +20,11 @@ namespace PlayerManager4
         private IView view;
 
         /// <summary>
-        /// Program begins here.
-        /// </summary>
-        /// <param name="args">Not used.</param>
-        private static void Main(string[] args)
-        {
-            // Create a new instance of the player listing program
-            Controller prog = new Controller();
-            // Start the program instance
-            prog.Start();
-        }
-
-        /// <summary>
         /// Creates a new instance of the player listing program.
         /// </summary>
         public Controller(List<Player> players)
         {
+            playerList = players;
             // Initialize player comparers
             compareByName = new CompareByName(true);
             compareByNameReverse = new CompareByName(false);
@@ -44,18 +33,18 @@ namespace PlayerManager4
         /// <summary>
         /// Start the player listing program instance
         /// </summary>
-        private void Start(IView view)
+        public void Start(IView view)
         {
             this.view = view;
 
             // We keep the user's option here
-            string option;
+            int option;
 
             // Main program loop
             do
             {
                 // Show menu and get user option
-                option = view.MainMenu();
+                option = view.ShowMenu();
 
                 // Determine the option specified by the user and act on it
                 switch (option)
@@ -65,7 +54,7 @@ namespace PlayerManager4
                         InsertPlayer();
                         break;
                     case 2:
-                        ListPlayers(playerList);
+                        view.ListPlayers(playerList);
                         break;
                     case 3:
                         ListPlayersWithScoreGreaterThan();
@@ -84,7 +73,7 @@ namespace PlayerManager4
                 view.AfterMenu();
 
                 // Loop keeps going until players choses to quit (option 4)
-            } while (option != "0");
+            } while (option != 0);
         }
 
 
@@ -94,7 +83,7 @@ namespace PlayerManager4
         /// </summary>
         private void InsertPlayer()
         {
-            playerList.Add(view.InsertPlayer(););
+            playerList.Add(view.InsertPlayer());
         }
 
         /// <summary>
