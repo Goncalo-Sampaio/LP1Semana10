@@ -1,6 +1,6 @@
 using System;
 
-namespace PlayerManager4
+namespace PlayerManagerMVC
 {
     public class Player : IComparable<Player>
     {

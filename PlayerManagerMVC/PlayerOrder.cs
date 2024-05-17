@@ -1,4 +1,4 @@
-namespace PlayerManager4
+namespace PlayerManagerMVC
 {
     public enum PlayerOrder
     {

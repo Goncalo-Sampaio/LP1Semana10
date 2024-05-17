@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PlayerManager4
+namespace PlayerManagerMVC
 {
     public interface IView
     {

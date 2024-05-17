@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace PlayerManager4
+namespace PlayerManagerMVC
 {
     /// <summary>
     /// The player listing program.
